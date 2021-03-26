@@ -38,6 +38,20 @@ A partir deste momento, o projeto está pronto para ser utilizado em:
 Qualquer dúvida entrar em contato que estou a disposição.
 
 
+## Informações adicionais
+
+Para parar a imagem bastar utilizar o comando>
+
+```bash
+docker-compose start
+```
+
+E caso queira apagar a imagem, com a imagem já parada, basta utilizar.
+
+```bash
+docker-compose rm -v
+```
+
 ## Documentação e Código fonte
 
 O código elaborado com base no curso da udemy: https://www.udemy.com/share/101tWeAEAbc1dSRXUB/
