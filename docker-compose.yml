@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  # restapi:
+  #   container_name: restapi
+  #   working_dir: /app/restapi/
+  #   build: 
+  #     context: ./restapi
+  #   command: npm start
+  #   ports: 
+  #     - 4000:4000
+  #   volumes: 
+  #     - ./restapi:/app/restapi
+  #     - /app/restapi/node_modules
+  #   logging: 
+  #       driver: "json-file"
+  #       options: 
+  #         max-size: "10m"
+  #         max-file: "5"
+  # web:
+  #   container_name: webapp
+  #   working_dir: /app/serverClient
+  #   build: 
+  #     context: ./serverClient
+  #   volumes: 
+  #     - ./serverClient:/app/serverClient
+  #     - /app/serverClient/bower_components
+  app:
+    container_name: app
+    build: 
+      context: ./
+    command: npm start
+    ports: 
+      - 4000:4000
+    volumes: 
+      - ./:/app/ 
+      - /app/restapi/node_modules
+      - /app/serverClient/bower_components
+    logging: 
+      driver: "json-file"
+      options: 
+        max-size: "10m"
+        max-file: "5"

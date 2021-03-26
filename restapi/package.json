@@ -1,0 +1,21 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "consign": "^0.1.6",
+    "cors": "2.8.*",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.0",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Heitor Carvalho Rod.",
+  "license": "ISC"
+}
